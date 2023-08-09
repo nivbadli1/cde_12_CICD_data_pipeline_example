@@ -8,7 +8,7 @@ def process_data(input_file, output_file):
     data['value'] = data['value'] * 2
     
     # Introduce a mistake: Add values instead of doubling them
-    data['value'] = data['value'] + 2  # This line is incorrect
+    # data['value'] = data['value'] + 2  # This line is incorrect
     
     # Export processed data to a new CSV
     data.to_csv(output_file, index=False)
