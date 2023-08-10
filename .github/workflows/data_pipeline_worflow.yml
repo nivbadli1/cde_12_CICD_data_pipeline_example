@@ -43,8 +43,8 @@ jobs:
     #   with:
     #     python-version: 3.8
     
-    # - name: Install dependencies
-    #   run: echo "hello staging"
+    - name: Install dependencies
+      run: echo "hello staging"
     
     # - name: Test Staging Environment
     #   run: |
