@@ -38,20 +38,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     
-    - name: Set up Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: 3.8
+    # - name: Set up Python
+    #   uses: actions/setup-python@v3
+    #   with:
+    #     python-version: 3.8
     
     - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      run: echo "hello staging"
     
-    - name: Test Staging Environment
-      run: |
-        # Run additional staging tests here
-        echo "Running staging tests..."
+    # - name: Test Staging Environment
+    #   run: |
+    #     # Run additional staging tests here
+    #     echo "Running staging tests..."
     
   deploy:
     name: Deploy to Production
