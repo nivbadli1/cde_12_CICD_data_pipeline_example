@@ -5,17 +5,16 @@ on:
     branches:
       - main
 
+    
 jobs:
   build_test:
     name: Build and Test Data Pipeline
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        node-version: '20'
-    
+      uses: actions/checkout@v4
+      
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
