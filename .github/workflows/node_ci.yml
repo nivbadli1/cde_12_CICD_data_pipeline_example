@@ -13,6 +13,10 @@ jobs:
         uses: actions/checkout@v4
       - name: Write content file
         run: echo "hello world from artifact" > hello_world.txt
+      
+      - name: Read contenr file 
+      - run: |
+        echo $(pwd) && echo hello_world.txt
       - name: Upload file to artifact
         uses: actions/upload-artifact@v4
         with:
