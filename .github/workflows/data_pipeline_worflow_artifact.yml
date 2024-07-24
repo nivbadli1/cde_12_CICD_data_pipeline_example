@@ -101,7 +101,7 @@ jobs:
         pip install -r requirements.txt
     
     - name: Download staging report
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: staging-report
     
