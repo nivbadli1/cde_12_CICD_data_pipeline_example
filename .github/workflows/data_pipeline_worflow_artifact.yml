@@ -1,7 +1,7 @@
 name: Data_Pipeline_CI/CD with Artifact
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
