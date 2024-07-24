@@ -3,7 +3,7 @@ name: Data_Pipeline_CI/CD
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   build_test:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       
     - name: Set up Python
       uses: actions/setup-python@v5
