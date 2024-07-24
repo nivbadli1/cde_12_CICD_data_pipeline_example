@@ -34,7 +34,7 @@ jobs:
         echo "All tests passed successfully" >> test_report.txt
     
     - name: Upload test report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: test-report
         path: test_report.txt
@@ -59,7 +59,7 @@ jobs:
         pip install -r requirements.txt
     
     - name: Download test report
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: test-report
     
@@ -76,7 +76,7 @@ jobs:
         echo "All staging tests passed successfully" >> staging_report.txt
     
     - name: Upload staging report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: staging-report
         path: staging_report.txt
@@ -118,7 +118,7 @@ jobs:
         echo "Data pipeline deployed successfully" >> deployment_report.txt
     
     - name: Upload deployment report
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: deployment-report
         path: deployment_report.txt
